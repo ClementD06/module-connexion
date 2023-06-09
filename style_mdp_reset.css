@@ -1,0 +1,217 @@
+/* --------------- Réglages de base ----------------- */
+
+@font-face {
+    font-family: "Poppins-Regular" ;
+    src: url(./Poppins-Regular.ttf);
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins-Regular";
+}
+
+body{
+    width: 100%;   
+}
+
+.entete{
+    width: 100vw;
+    height: 100px;
+}
+.navbar{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgba(36, 68, 132, 0.908);
+    align-items: center;
+    height: 100px;
+    padding: 25px;
+}
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #img_logo{
+        width: 100px;
+        height: auto;
+
+    }
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.navbar .txt_logo{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.navbar .nav_links ul{
+    display: flex;
+}
+.navbar .nav_links ul li{
+    margin: 0 25px;
+    color: white;
+    font-size: 0.9em;
+}
+.navbar .nav_links ul li.active a{
+    color: red;
+}
+
+@media screen and (max-width: 900px) {
+    .nav_links{
+        display: none;
+    }
+}
+.navbar .menu_hamburger{
+    display: none;
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu_hamburger{
+        display: block;
+    }
+    .nav_links{
+        position: absolute;
+        display: flex;
+        background-color: rgba(27, 26, 26, 0.804);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(6px);
+        margin-left: 100%;
+        
+    }
+    .nav_links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar .nav_links ul li{
+        margin: 25px 0px;
+        font-size: 1.3em;
+    }
+}
+.mobile-menu{
+    margin-left: 0;
+}
+
+
+#a_propos{
+    scroll-margin-top: 150px;
+}
+#mes_projets {
+    scroll-margin-top: 150px;
+}
+#contact_me {
+    scroll-margin-top: 150px;
+}
+
+/* -------------- section 1 ---------------*/
+
+.section_1{
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(8, 48, 97, 0.686);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+       .accueil{
+            width: 100%;
+            height: 85%;
+            background-color: rgba(255, 255, 255, 0.248);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .formulaire_mdp{
+            width: 55%;
+            height: 90%;
+            background-color: rgba(255, 255, 255, 0.248);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        .formulaire_mdp form{
+            width: 30%;
+            height: 70%;
+            background-color: rgba(8, 48, 97, 0.533);
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        
+        
+        
+        
+        
+        /*     .create_account{
+                width: 100%;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                align-items: center;
+            }
+            .formulaire{
+                width: 100%;
+                height: 65%;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                form{
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(8, 48, 97, 0.686);
+                    border-radius: 5px;
+                    color: white;
+                    line-height: 1.5;
+                    font-size: 0.85em;
+                }
+                input{
+                    width: 250px; 
+                }   */
+
+/* -------------- Section 2 -----------------*/
+
+.section_2{
+    width: 100vw;
+    height: 50px;
+    background-color: rgba(36, 68, 132, 0.908);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.75em;
+}
+
+    
